@@ -1,0 +1,46 @@
+.app-container {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Scroll Snapping Utilities */
+.snap-parent {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.snap-parent::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.snap-child {
+  min-height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  /*.snap-parent {*/
+  /*  scroll-snap-type: none; !* Disable snapping on mobile so users can read long bios easily *!*/
+  /*}*/
+  .snap-child {
+    min-height: auto;
+    padding: 3rem 0;
+  }
+  .home-container, .work-section, .contacts-section {
+    min-height: 100vh; /* Keep videos full height */
+    padding: 0;
+    scroll-snap-align: start;
+  }
+}
