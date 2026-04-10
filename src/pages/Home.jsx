@@ -17,7 +17,7 @@ const Home = () => {
           loop 
           muted 
           playsInline 
-          className="bg-media"
+          className="bg-video"
         >
           <source src="/videos/home_bg.mp4" type="video/mp4" />
         </video>
