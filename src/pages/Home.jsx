@@ -18,6 +18,8 @@ const Home = () => {
           muted 
           playsInline 
           className="bg-video"
+          onCanPlay={(e) => (e.target.muted = true)}
+          src="/videos/home_bg.mp4"
         >
           <source src="/videos/home_bg.mp4" type="video/mp4" />
         </video>
