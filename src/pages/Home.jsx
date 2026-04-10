@@ -19,7 +19,7 @@ const Home = () => {
           playsInline 
           className="bg-media"
         >
-          <source src="/videos/home-bg.mp4" type="video/mp4" />
+          <source src="/videos/home_bg.mp4" type="video/mp4" />
         </video>
         <div className="video-overlay"></div>
       </div>
