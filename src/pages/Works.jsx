@@ -7,21 +7,21 @@ const worksData = [
     year: '2024',
     title: 'Tutto Fumo',
     description: 'Something is smoking.',
-    // localVideo: '/videos/tutto_fumo.mp4'
+    localVideo: '/videos/tutto_fumo.mp4'
   },
   {
     id: 4,
     year: '2024',
     title: 'Nadī',
     description: 'I mean, aren`t we all crazy sometimes?',
-    // localVideo: '/videos/nadi.mp4'
+    localVideo: '/videos/nadi.mp4'
   },
   {
     id: 3,
     year: '2024',
     title: 'Tension Funfair',
     description: 'Life like a circus, deep inside, the tension of the realities.',
-    // localVideo: '/videos/tension_funfair.mp4'
+    localVideo: '/videos/tension_funfair.mp4'
   },
   {
     id: 2,
