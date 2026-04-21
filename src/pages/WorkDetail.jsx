@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { worksData } from '../data/works';
-import { ArrowLeft, Play, Users, MessageSquare, Info, Calendar } from 'lucide-react';
+import { ArrowLeft, Play, Users, MessageSquare, Info, Calendar, Camera } from 'lucide-react';
 import './WorkDetail.css';
 
 const WorkDetail = () => {
@@ -104,6 +104,23 @@ const WorkDetail = () => {
             </div>
           )}
         </section>
+
+        {/* Photos Section */}
+        {work.photos && work.photos.length > 0 && (
+          <section className="detail-section photos-section">
+            <div className="section-header">
+              <Camera className="section-icon" />
+              <h2>PHOTOS</h2>
+            </div>
+            <div className="photos-grid">
+              {work.photos.map((photo, idx) => (
+                <div key={idx} className="photo-item">
+                  <img src={photo} alt={`${work.title} - ${idx + 1}`} loading="lazy" />
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Reviews Section */}
         {work.reviews && work.reviews.length > 0 && (
