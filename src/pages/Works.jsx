@@ -19,16 +19,6 @@ const Works = () => {
               >
                 <source src={work.localVideo} type="video/mp4" />
               </video>
-            ) : work.youtubeId ? (
-              <div className="youtube-wrapper">
-                <iframe 
-                  className="bg-media youtube-bg"
-                  src={`https://www.youtube.com/embed/${work.youtubeId}?autoplay=1&mute=1&controls=0&loop=1&playlist=${work.youtubeId}&playsinline=1&modestbranding=1`}
-                  title={work.title} 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                ></iframe>
-              </div>
             ) : (
               <div className="bg-media placeholder-bg"></div>
             )}

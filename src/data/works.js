@@ -14,7 +14,7 @@ export const worksData = [
       { label: 'Music', value: 'Various artists' }
     ],
     reviews: [],
-    localVideo: '/videos/tutto_fumo.mp4',
+    localVideo: '/tutto_fumo/videos/tutto_fumo_short.mp4',
     photos: [
       '/tutto_fumo/images/tutto_fumo_1.jpg',
       '/tutto_fumo/images/tutto_fumo_2.jpg',
@@ -52,7 +52,7 @@ export const worksData = [
         source: 'Pulse Magazine, What about the Rain? 2024'
       }
     ],
-    localVideo: '/videos/nadi.mp4',
+    localVideo: '/nadi/videos/nadi_short.mp4',
     photos: []
   },
   {
@@ -70,7 +70,7 @@ export const worksData = [
       { label: 'Footage by', value: 'Antonello Sangirardi' }
     ],
     reviews: [],
-    localVideo: '/videos/tension_funfair.mp4',
+    localVideo: '/tension_funfair/videos/tension_funfair_short.mp4',
     photos: []
   },
   {
@@ -97,7 +97,7 @@ export const worksData = [
       { label: 'Footage by', value: 'Aaron Akrong' }
     ],
     reviews: [],
-    youtubeId: 'ARRdNC1AxHc',
+    localVideo: '/my_shop_your_problems/videos/my_shop_your_problems_short.mp4',
     photos: []
   },
   {
@@ -124,7 +124,7 @@ export const worksData = [
         source: 'Bruce Marriot'
       }
     ],
-    youtubeId: 'Go5jyB1-w0c',
+    localVideo: '/what_about_the_rain/videos/what_about_the_rain_short.mp4',
     photos: []
   },
   {
@@ -144,7 +144,7 @@ export const worksData = [
       { label: 'Music', value: 'Various Artists' }
     ],
     reviews: [],
-    youtubeId: null, // No video provided in prompt for this one, but I'll leave space
+    localVideo: '/leoni_da_tastiera_keyboard_lions/videos/leoni_da_tastiera_keyboard_lions_short.mp4',
     photos: []
   }
 ];
