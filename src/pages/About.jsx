@@ -2,9 +2,9 @@ import React from 'react'
 import './About.css'
 
 const collaborators = [
-  { name: 'Jodi Rabinowitz', role: 'Light, set and video Designer', image: '/images/jodi Rabinowitz.jpg' },
-  { name: 'Nordra', role: 'Composer', image: '/images/Nordra.jpg' },
-  { name: 'Dylan Tedaldi', role: 'Multidisciplinary artist', image: '/images/Dylan Tedaldi.jpg' }
+  { name: 'Jodi Rabinowitz', role: 'Light, set and video Designer', image: '/collaborators/JodiRabinowitz.jpg' },
+  { name: 'Nordra', role: 'Composer', image: '/collaborators/Nordra.jpg' },
+  { name: 'Dylan Tedaldi', role: 'Multidisciplinary artist', image: '/collaborators/DylanTedaldi.jpg' }
 ];
 
 const About = () => {
@@ -13,7 +13,7 @@ const About = () => {
       <section id="aishwarya" className="snap-child pb-section">
         <div className="bio-section container">
           <div className="bio-image-wrapper">
-            <img src="/images/Aishwarya%20Raut.jpg" alt="Aishwarya Raut" className="bio-image" />
+            <img src="/collaborators/AishwaryaRaut.jpg" alt="Aishwarya Raut" className="bio-image" />
           </div>
           <div className="bio-text">
             <div className="bio-header">
@@ -33,7 +33,7 @@ const About = () => {
       <section id="antonello" className="snap-child pb-section">
         <div className="bio-section reverse container">
           <div className="bio-image-wrapper">
-            <img src="/images/Antonello%20Sangirardi.jpg" alt="Antonello Sangirardi" className="bio-image" />
+            <img src="/collaborators/AntonelloSangirardi.jpg" alt="Antonello Sangirardi" className="bio-image" />
           </div>
           <div className="bio-text">
             <div className="bio-header">

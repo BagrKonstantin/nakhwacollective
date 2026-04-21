@@ -16,15 +16,15 @@ export const worksData = [
     reviews: [],
     localVideo: '/tutto_fumo/videos/tutto_fumo_short.mp4',
     photos: [
-      '/tutto_fumo/images/tutto_fumo_1.jpg',
-      '/tutto_fumo/images/tutto_fumo_2.jpg',
-      '/tutto_fumo/images/tutto_fumo_3.jpg',
-      '/tutto_fumo/images/tutto_fumo_4.jpg',
-      '/tutto_fumo/images/tutto_fumo_5.jpg',
-      '/tutto_fumo/images/tutto_fumo_6.jpg',
-      '/tutto_fumo/images/tutto_fumo_7.jpg',
-      '/tutto_fumo/images/tutto_fumo_8.jpg',
-      '/tutto_fumo/images/tutto_fumo_9.jpg'
+      '/tutto_fumo/collaborators/tutto_fumo_1.jpg',
+      '/tutto_fumo/collaborators/tutto_fumo_2.jpg',
+      '/tutto_fumo/collaborators/tutto_fumo_3.jpg',
+      '/tutto_fumo/collaborators/tutto_fumo_4.jpg',
+      '/tutto_fumo/collaborators/tutto_fumo_5.jpg',
+      '/tutto_fumo/collaborators/tutto_fumo_6.jpg',
+      '/tutto_fumo/collaborators/tutto_fumo_7.jpg',
+      '/tutto_fumo/collaborators/tutto_fumo_8.jpg',
+      '/tutto_fumo/collaborators/tutto_fumo_9.jpg'
     ]
   },
   {
