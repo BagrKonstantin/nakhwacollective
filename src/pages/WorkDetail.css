@@ -223,29 +223,6 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Footer */
-.detail-footer {
-  margin-top: 8rem;
-  text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 4rem;
-}
-
-.footer-back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  transition: color 0.3s;
-}
-
-.footer-back-link:hover {
-  color: white;
-}
-
 /* Error Page */
 .error-page {
   height: 100vh;

@@ -124,11 +124,6 @@ const WorkDetail = () => {
         )}
       </div>
 
-      <footer className="detail-footer container">
-        <Link to="/" className="footer-back-link">
-          <ArrowLeft size={16} /> RETURN TO MAIN SITE
-        </Link>
-      </footer>
     </div>
   );
 };
