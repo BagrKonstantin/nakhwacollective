@@ -27,9 +27,9 @@ const Home = () => {
       </div>
       
       <div className="home-content">
-        <h1 className="hero-title">NAKHWA COLLECTIVE</h1>
-        <p className="hero-subtitle">Movement as our main pillar</p>
-        <p className="hero-description">Founded by Aishwarya Raut and Antonello Sangirardi, collaborating with artists from around the world to create work across film, theater, workshops, and site-specific performances.</p>
+        <h1 className="hero-title">Nakhwa</h1>
+        <p className="hero-subtitle">Movement based creative duo</p>
+        <p className="hero-description">Founded by Aishwarya Raut and Antonello Sangirardi, collaborating with artists from around the world to create across and through Theatres, site specific, Workshops and film</p>
         <div className="home-nav-buttons">
           <button onClick={() => scrollTo('aishwarya')} className="home-nav-btn">About Us</button>
           <button onClick={() => scrollTo('work-5')} className="home-nav-btn">Our Works</button>
