@@ -1,0 +1,295 @@
+.work-detail-page {
+  background-color: #0a0a0a;
+  color: #eeeeee;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Back Button */
+.back-button {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(-5px);
+}
+
+/* Hero Section */
+.work-hero {
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3rem;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-video, .hero-youtube {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-youtube-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.hero-youtube {
+  transform: scale(1.1); /* Hide black bars */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(10, 10, 10, 1) 0%, rgba(10, 10, 10, 0.4) 50%, rgba(10, 10, 10, 0.2) 100%);
+  z-index: 2;
+}
+
+.hero-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #1a1a1a;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+}
+
+.hero-year {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 1s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-style: italic;
+  max-width: 600px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 0.4s forwards;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Detail Content */
+.detail-content {
+  padding-top: 4rem;
+}
+
+.detail-section {
+  margin-bottom: 6rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1rem;
+}
+
+.section-icon {
+  color: #c4b5fd; /* Light violet */
+}
+
+.section-header h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+
+.project-description {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 1000px;
+}
+
+.premiere-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #c4b5fd;
+}
+
+/* Credits Grid */
+.credits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.credit-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.credit-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.credit-value {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.sub-section-title {
+  font-size: 1.2rem;
+  margin: 3rem 0 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+}
+
+/* Reviews */
+.reviews-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.review-card {
+  padding: 2rem;
+  border-left: 4px solid #c4b5fd;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.review-quote {
+  font-size: 1.6rem;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.review-source {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Footer */
+.detail-footer {
+  margin-top: 8rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 4rem;
+}
+
+.footer-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  transition: color 0.3s;
+}
+
+.footer-back-link:hover {
+  color: white;
+}
+
+/* Error Page */
+.error-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.back-link {
+  color: #c4b5fd;
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 768px) {
+  .back-button {
+    top: 1rem;
+    left: 1rem;
+    padding: 0.6rem 1rem;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .project-description {
+    font-size: 1.1rem;
+  }
+  
+  .review-quote {
+    font-size: 1.3rem;
+  }
+}

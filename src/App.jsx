@@ -1,23 +1,20 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
-
-import Home from './pages/Home'
-import About from './pages/About'
-import Works from './pages/Works'
-import Contacts from './pages/Contacts'
-import SideNav from './components/SideNav'
+import LandingPage from './pages/LandingPage'
+import WorkDetail from './pages/WorkDetail'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
-    <div className="app-container snap-parent">
-      <SideNav />
-      <Home />
-      <About />
-      <Works />
-      <Contacts />
-    </div>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/work/:id" element={<WorkDetail />} />
+      </Routes>
+    </>
   )
 }
-
 
 export default App

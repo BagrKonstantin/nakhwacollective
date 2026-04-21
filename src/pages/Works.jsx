@@ -1,43 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { worksData } from '../data/works'
 import './Works.css'
-
-const worksData = [
-  {
-    id: 5,
-    year: '2024',
-    title: 'Tutto Fumo',
-    description: 'Something is smoking.',
-    localVideo: '/videos/tutto_fumo.mp4'
-  },
-  {
-    id: 4,
-    year: '2024',
-    title: 'Nadī',
-    description: 'I mean, aren`t we all crazy sometimes?',
-    localVideo: '/videos/nadi.mp4'
-  },
-  {
-    id: 3,
-    year: '2024',
-    title: 'Tension Funfair',
-    description: 'Life like a circus, deep inside, the tension of the realities.',
-    localVideo: '/videos/tension_funfair.mp4'
-  },
-  {
-    id: 2,
-    year: '2023',
-    title: 'My Shop Your Problems',
-    description: 'A social commentary about the main disrupting elements of our worlds.',
-    youtubeId: 'ARRdNC1AxHc'
-  },
-  {
-    id: 1,
-    year: '2023',
-    title: 'What About The Rain',
-    description: 'Inspired by Indian Monsoons, the hyper reality connects to nature and our society.',
-    youtubeId: 'Go5jyB1-w0c'
-  }
-]
 
 const Works = () => {
   return (
@@ -55,7 +19,7 @@ const Works = () => {
               >
                 <source src={work.localVideo} type="video/mp4" />
               </video>
-            ) : (
+            ) : work.youtubeId ? (
               <div className="youtube-wrapper">
                 <iframe 
                   className="bg-media youtube-bg"
@@ -65,6 +29,8 @@ const Works = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 ></iframe>
               </div>
+            ) : (
+              <div className="bg-media placeholder-bg"></div>
             )}
             <div className="work-overlay"></div>
           </div>
@@ -72,7 +38,10 @@ const Works = () => {
           <div className="work-content container">
             <span className="work-year">{work.year}</span>
             <h2 className="work-title">{work.title}</h2>
-            <p className="work-description">{work.description}</p>
+            <p className="work-description">{work.subtitle || work.description}</p>
+            <Link to={`/work/${work.pathId}`} className="discover-btn">
+              DISCOVER PROJECT
+            </Link>
           </div>
         </section>
       ))}

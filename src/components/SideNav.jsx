@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { worksData } from '../data/works';
 import './SideNav.css';
 
 export const groupedSections = [
@@ -18,13 +19,7 @@ export const groupedSections = [
   },
   {
     category: 'Our Works',
-    items: [
-      { id: 'work-5', label: 'Tutto Fumo' },
-      { id: 'work-4', label: 'Nadī' },
-      { id: 'work-3', label: 'Tension Funfair' },
-      { id: 'work-2', label: 'My Shop Your Problems' },
-      { id: 'work-1', label: 'What About The Rain' }
-    ]
+    items: worksData.map(work => ({ id: `work-${work.id}`, label: work.title }))
   },
   {
     category: 'Contact us',
