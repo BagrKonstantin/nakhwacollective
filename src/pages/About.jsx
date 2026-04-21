@@ -18,7 +18,7 @@ const About = () => {
           <div className="bio-text">
             <div className="bio-header">
               <h2>AISHWARYA RAUT</h2>
-              <span className="role">Dancer & Choreographer</span>
+              <span className="role">Dancer and Choreographer</span>
             </div>
             <div className="bio-content">
               <p>Aishwarya Raut was born and raised in Mumbai. She trained in India and the UK (Liverpool Institute for Performing Arts). She holds a BA in Dance and an MA in Dance Performance. From 2018 to 2024, she danced with Rambert performing works by leading contemporary choreographers, earning National Dance Awards UK nominations in 2024 and 2025. Aishwarya joined GöteborgsOperans Danskompani in July 2025.</p>
@@ -38,7 +38,7 @@ const About = () => {
           <div className="bio-text">
             <div className="bio-header">
               <h2>ANTONELLO SANGIRARDI</h2>
-              <span className="role">Contemporary Dancer, Choreographer, Photographer</span>
+              <span className="role">Dancer, choreographer and photographer</span>
             </div>
             <div className="bio-content">
               <p>Antonello Sangirardi is a contemporary dancer, choreographer, and photographer from Bari, Italy. In 2017 he danced with 'Ballet Preljocaj' later joining 'Rambert' from 2018 to 2024. Antonello has toured across UK, Europe, Asia and Australia and performed works by Wim Vandekeybus, Ben Duke, Sidi Larbi Cherkaoui, Imre and Marne Van Opstal, Jill Johnson, Hofesh Shechter, Ohad Naharin, Sharon Eyal, Trisha Brown, Merce Cunningham, Alonzo King, Jo Strømgren, Benoit Swan Pouffer, Ella Rothschild, Angelin Preljocaj, Roberta Ferrara, Brian Ca.</p>
