@@ -14,17 +14,17 @@ export const worksData = [
       { label: 'Music', value: 'Various artists' }
     ],
     reviews: [],
-    localVideo: '/tutto_fumo/videos/tutto_fumo_short.mp4',
+    localVideo: '/works/tutto_fumo/videos/tutto_fumo_short.mp4',
     photos: [
-      '/tutto_fumo/collaborators/tutto_fumo_1.jpg',
-      '/tutto_fumo/collaborators/tutto_fumo_2.jpg',
-      '/tutto_fumo/collaborators/tutto_fumo_3.jpg',
-      '/tutto_fumo/collaborators/tutto_fumo_4.jpg',
-      '/tutto_fumo/collaborators/tutto_fumo_5.jpg',
-      '/tutto_fumo/collaborators/tutto_fumo_6.jpg',
-      '/tutto_fumo/collaborators/tutto_fumo_7.jpg',
-      '/tutto_fumo/collaborators/tutto_fumo_8.jpg',
-      '/tutto_fumo/collaborators/tutto_fumo_9.jpg'
+      '/works/tutto_fumo/collaborators/tutto_fumo_1.jpg',
+      '/works/tutto_fumo/collaborators/tutto_fumo_2.jpg',
+      '/works/tutto_fumo/collaborators/tutto_fumo_3.jpg',
+      '/works/tutto_fumo/collaborators/tutto_fumo_4.jpg',
+      '/works/tutto_fumo/collaborators/tutto_fumo_5.jpg',
+      '/works/tutto_fumo/collaborators/tutto_fumo_6.jpg',
+      '/works/tutto_fumo/collaborators/tutto_fumo_7.jpg',
+      '/works/tutto_fumo/collaborators/tutto_fumo_8.jpg',
+      '/works/tutto_fumo/collaborators/tutto_fumo_9.jpg'
     ]
   },
   {
@@ -52,7 +52,7 @@ export const worksData = [
         source: 'Pulse Magazine, What about the Rain? 2024'
       }
     ],
-    localVideo: '/nadi/videos/nadi_short.mp4',
+    localVideo: '/works/nadi/videos/nadi_short.mp4',
     photos: []
   },
   {
@@ -70,7 +70,7 @@ export const worksData = [
       { label: 'Footage by', value: 'Antonello Sangirardi' }
     ],
     reviews: [],
-    localVideo: '/tension_funfair/videos/tension_funfair_short.mp4',
+    localVideo: '/works/tension_funfair/videos/tension_funfair_short.mp4',
     photos: []
   },
   {
@@ -97,7 +97,7 @@ export const worksData = [
       { label: 'Footage by', value: 'Aaron Akrong' }
     ],
     reviews: [],
-    localVideo: '/my_shop_your_problems/videos/my_shop_your_problems_short.mp4',
+    localVideo: '/works/my_shop_your_problems/videos/my_shop_your_problems_short.mp4',
     photos: []
   },
   {
@@ -124,7 +124,7 @@ export const worksData = [
         source: 'Bruce Marriot'
       }
     ],
-    localVideo: '/what_about_the_rain/videos/what_about_the_rain_short.mp4',
+    localVideo: '/works/what_about_the_rain/videos/what_about_the_rain_short.mp4',
     photos: []
   },
   {
@@ -144,7 +144,7 @@ export const worksData = [
       { label: 'Music', value: 'Various Artists' }
     ],
     reviews: [],
-    localVideo: '/leoni_da_tastiera_keyboard_lions/videos/leoni_da_tastiera_keyboard_lions_short.mp4',
+    localVideo: '/works/leoni_da_tastiera_keyboard_lions/videos/leoni_da_tastiera_keyboard_lions_short.mp4',
     photos: []
   }
 ];
