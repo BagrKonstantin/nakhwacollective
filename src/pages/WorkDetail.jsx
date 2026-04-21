@@ -1,13 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { worksData } from '../data/works';
-import { ArrowLeft, Play, Users, MessageSquare, Info, Calendar, Camera } from 'lucide-react';
+import { ArrowLeft, Play, Users, MessageSquare, Info, Calendar, Camera, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import './WorkDetail.css';
 
 const WorkDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const work = worksData.find(w => w.pathId === id);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
+
+  const handleKeyDown = useCallback((e) => {
+    if (selectedImageIndex === null) return;
+    
+    if (e.key === 'Escape') setSelectedImageIndex(null);
+    if (e.key === 'ArrowRight') {
+      setSelectedImageIndex(prev => (prev + 1) % work.photos.length);
+    }
+    if (e.key === 'ArrowLeft') {
+      setSelectedImageIndex(prev => (prev - 1 + work.photos.length) % work.photos.length);
+    }
+  }, [selectedImageIndex, work?.photos?.length]);
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [handleKeyDown]);
 
   if (!work) {
     return (
@@ -17,6 +35,16 @@ const WorkDetail = () => {
       </div>
     );
   }
+
+  const closeLightbox = () => setSelectedImageIndex(null);
+  const nextImage = (e) => {
+    e.stopPropagation();
+    setSelectedImageIndex((selectedImageIndex + 1) % work.photos.length);
+  };
+  const prevImage = (e) => {
+    e.stopPropagation();
+    setSelectedImageIndex((selectedImageIndex - 1 + work.photos.length) % work.photos.length);
+  };
 
   return (
     <div className="work-detail-page">
@@ -114,7 +142,7 @@ const WorkDetail = () => {
             </div>
             <div className="photos-grid">
               {work.photos.map((photo, idx) => (
-                <div key={idx} className="photo-item">
+                <div key={idx} className="photo-item" onClick={() => setSelectedImageIndex(idx)}>
                   <img src={photo} alt={`${work.title} - ${idx + 1}`} loading="lazy" />
                 </div>
               ))}
@@ -141,8 +169,36 @@ const WorkDetail = () => {
         )}
       </div>
 
+      {/* Lightbox Modal */}
+      {selectedImageIndex !== null && (
+        <div className="lightbox-overlay" onClick={closeLightbox}>
+          <button className="lightbox-close" onClick={closeLightbox} aria-label="Close">
+            <X size={32} />
+          </button>
+          
+          <button className="lightbox-nav prev" onClick={prevImage} aria-label="Previous image">
+            <ChevronLeft size={48} />
+          </button>
+          
+          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <img 
+              src={work.photos[selectedImageIndex]} 
+              alt={`${work.title} - Full screen`} 
+              className="lightbox-image"
+            />
+            <div className="lightbox-counter">
+              {selectedImageIndex + 1} / {work.photos.length}
+            </div>
+          </div>
+          
+          <button className="lightbox-nav next" onClick={nextImage} aria-label="Next image">
+            <ChevronRight size={48} />
+          </button>
+        </div>
+      )}
     </div>
   );
 };
 
 export default WorkDetail;
+
