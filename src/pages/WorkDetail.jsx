@@ -20,7 +20,7 @@ const WorkDetail = () => {
 
   return (
     <div className="work-detail-page">
-      <button className="back-button" onClick={() => navigate('/')} aria-label="Back to home">
+      <button className="back-button" onClick={() => navigate(`/#work-${work.id}`)} aria-label="Back to home">
         <ArrowLeft size={24} />
         <span>BACK</span>
       </button>

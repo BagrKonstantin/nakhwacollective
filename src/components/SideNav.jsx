@@ -58,6 +58,16 @@ const SideNav = () => {
     return () => observer.disconnect();
   }, []);
 
+  // Update URL hash without adding to history when active section changes
+  useEffect(() => {
+    if (activeId) {
+      const newHash = `#${activeId}`;
+      if (window.location.hash !== newHash) {
+        window.history.replaceState(null, '', newHash);
+      }
+    }
+  }, [activeId]);
+
   const scrollTo = (id) => {
     const element = document.getElementById(id);
     if (element) {
