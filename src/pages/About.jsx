@@ -2,8 +2,8 @@ import React from 'react'
 import './About.css'
 
 const collaborators = [
-  { name: 'Jodi Rabinowitz', role: 'Light designer', quote: "she's fucking great", image: '/images/jodi Rabinowitz.jpg' },
-  { name: 'Nordra', role: 'Music maker', quote: "fucking cool stuff", image: '/images/Nordra.jpg' },
+  { name: 'Jodi Rabinowitz', role: 'Light, set and video Designer', quote: "she's fucking great", image: '/images/jodi Rabinowitz.jpg' },
+  { name: 'Nordra', role: 'Composer', quote: "fucking cool stuff", image: '/images/Nordra.jpg' },
   { name: 'Dylan Tedaldi', role: 'Multidisciplinary artist', quote: "Great, but needs to become more political!", image: '/images/Dylan Tedaldi.jpg' }
 ];
 
