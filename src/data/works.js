@@ -15,6 +15,7 @@ export const worksData = [
     ],
     reviews: [],
     localVideo: '/works/tutto_fumo/videos/tutto_fumo_short.mp4',
+    fullVideo: '/works/tutto_fumo/videos/tutto_fumo_low.mp4',
     photos: [
       '/works/tutto_fumo/images/tutto_fumo_1_low.jpg',
       '/works/tutto_fumo/images/tutto_fumo_2_low.jpg',
@@ -53,6 +54,7 @@ export const worksData = [
       }
     ],
     localVideo: '/works/nadi/videos/nadi_short.mp4',
+    fullVideo: '/works/nadi/videos/nadi_low.mp4',
     photos: [
       '/works/nadi/images/nadi_1_low.jpg',
       '/works/nadi/images/nadi_2_low.jpg',
@@ -83,6 +85,7 @@ export const worksData = [
     ],
     reviews: [],
     localVideo: '/works/tension_funfair/videos/tension_funfair_short.mp4',
+    fullVideo: '/works/tension_funfair/videos/tension_funfair_low.mp4',
     photos: [
       '/works/tension_funfair/images/tension_funfair_1_low.jpg',
       '/works/tension_funfair/images/tension_funfair_2_low.jpg',
@@ -118,6 +121,7 @@ export const worksData = [
     ],
     reviews: [],
     localVideo: '/works/my_shop_your_problems/videos/my_shop_your_problems_short.mp4',
+    fullVideo: '/works/my_shop_your_problems/videos/my_shop_your_problems_low.mp4',
     photos: [
       '/works/my_shop_your_problems/images/my_shop_your_problems_1_low.jpg',
       '/works/my_shop_your_problems/images/my_shop_your_problems_2_low.jpg',
@@ -156,6 +160,7 @@ export const worksData = [
       }
     ],
     localVideo: '/works/what_about_the_rain/videos/what_about_the_rain_short.mp4',
+    fullVideo: '/works/what_about_the_rain/videos/what_about_the_rain_low.mp4',
     photos: []
   },
   {
@@ -176,6 +181,7 @@ export const worksData = [
     ],
     reviews: [],
     localVideo: '/works/leoni_da_tastiera_keyboard_lions/videos/leoni_da_tastiera_keyboard_lions_short.mp4',
+    fullVideo: '/works/leoni_da_tastiera_keyboard_lions/videos/leoni_da_tastiera_keyboard_lions_low.mp4',
     photos: [
       '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_1_low.jpg',
       '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_2_low.jpg',

@@ -9,18 +9,21 @@ const WorkDetail = () => {
   const navigate = useNavigate();
   const work = worksData.find(w => w.pathId === id);
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
 
   const handleKeyDown = useCallback((e) => {
-    if (selectedImageIndex === null) return;
-    
-    if (e.key === 'Escape') setSelectedImageIndex(null);
-    if (e.key === 'ArrowRight') {
-      setSelectedImageIndex(prev => (prev + 1) % work.photos.length);
+    if (selectedImageIndex !== null) {
+      if (e.key === 'Escape') setSelectedImageIndex(null);
+      if (e.key === 'ArrowRight') {
+        setSelectedImageIndex(prev => (prev + 1) % work.photos.length);
+      }
+      if (e.key === 'ArrowLeft') {
+        setSelectedImageIndex(prev => (prev - 1 + work.photos.length) % work.photos.length);
+      }
+    } else if (isVideoModalOpen) {
+      if (e.key === 'Escape') setIsVideoModalOpen(false);
     }
-    if (e.key === 'ArrowLeft') {
-      setSelectedImageIndex(prev => (prev - 1 + work.photos.length) % work.photos.length);
-    }
-  }, [selectedImageIndex, work?.photos?.length]);
+  }, [selectedImageIndex, isVideoModalOpen, work?.photos?.length]);
 
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
@@ -76,9 +79,17 @@ const WorkDetail = () => {
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content container">
-          <span className="hero-year">{work.year}</span>
-          <h1 className="hero-title">{work.title}</h1>
-          {work.subtitle && <p className="hero-subtitle">{work.subtitle}</p>}
+          <div className="hero-text">
+            <span className="hero-year">{work.year}</span>
+            <h1 className="hero-title">{work.title}</h1>
+            {work.subtitle && <p className="hero-subtitle">{work.subtitle}</p>}
+          </div>
+          {work.fullVideo && (
+            <button className="watch-full-button" onClick={() => setIsVideoModalOpen(true)}>
+              <Play size={20} fill="currentColor" />
+              <span>WATCH EXCERPT</span>
+            </button>
+          )}
         </div>
       </section>
 
@@ -196,9 +207,30 @@ const WorkDetail = () => {
           </button>
         </div>
       )}
+
+      {/* Video Modal */}
+      {isVideoModalOpen && work.fullVideo && (
+        <div className="lightbox-overlay video-modal-overlay" onClick={() => setIsVideoModalOpen(false)}>
+          <button className="lightbox-close" onClick={() => setIsVideoModalOpen(false)} aria-label="Close">
+            <X size={32} />
+          </button>
+          
+          <div className="video-modal-content" onClick={(e) => e.stopPropagation()}>
+            <video 
+              autoPlay 
+              controls 
+              className="full-video-player"
+              src={work.fullVideo}
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
+
 
 export default WorkDetail;
 
