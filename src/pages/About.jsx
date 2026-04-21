@@ -2,9 +2,9 @@ import React from 'react'
 import './About.css'
 
 const collaborators = [
-  { name: 'Jodi Rabinowitz', role: 'Light, set and video Designer', quote: "she's fucking great", image: '/images/jodi Rabinowitz.jpg' },
-  { name: 'Nordra', role: 'Composer', quote: "fucking cool stuff", image: '/images/Nordra.jpg' },
-  { name: 'Dylan Tedaldi', role: 'Multidisciplinary artist', quote: "Great, but needs to become more political!", image: '/images/Dylan Tedaldi.jpg' }
+  { name: 'Jodi Rabinowitz', role: 'Light, set and video Designer', image: '/images/jodi Rabinowitz.jpg' },
+  { name: 'Nordra', role: 'Composer', image: '/images/Nordra.jpg' },
+  { name: 'Dylan Tedaldi', role: 'Multidisciplinary artist', image: '/images/Dylan Tedaldi.jpg' }
 ];
 
 const About = () => {
@@ -57,9 +57,6 @@ const About = () => {
               <div className="collaborator-card" key={index}>
                 <div className="collab-image-wrapper">
                   <img src={collab.image} alt={collab.name} className="collab-image" />
-                  <div className="collab-overlay">
-                    <p className="collab-quote">"{collab.quote}"</p>
-                  </div>
                 </div>
                 <div className="collab-info">
                   <h3>{collab.name}</h3>
