@@ -10,11 +10,11 @@ const Works = () => {
         <section id={`work-${work.id}`} key={work.id} className="work-section snap-child">
           <div className="work-bg">
             {work.localVideo ? (
-              <video 
-                autoPlay 
-                loop 
-                muted 
-                playsInline 
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
                 className="bg-media"
               >
                 <source src={work.localVideo} type="video/mp4" />
@@ -24,7 +24,7 @@ const Works = () => {
             )}
             <div className="work-overlay"></div>
           </div>
-          
+
           <div className="work-content container">
             <span className="work-year">{work.year}</span>
             <h2 className="work-title">{work.title}</h2>
