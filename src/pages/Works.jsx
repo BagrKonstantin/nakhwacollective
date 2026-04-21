@@ -5,8 +5,19 @@ const worksData = [
   {
     id: 5,
     year: '2024',
-    title: 'Tutto Fumo',
-    description: 'Something is smoking.',
+    title: '\'Tutto Fumo\'',
+    description: 'Creation for 9 dancers. Originally made with 30 dancers.\n' +
+        '\n' +
+        '(Once we click on it we get to a page made just for Tutto Fumo, with trailer, description, photos and credits we\'ll repeat the same for all the others.)\n' +
+        '\n' +
+        '"Tutto fumo" ("All Smoke")  is a series of   personal and collective reflections on apathy, compulsive habits and conditioning of human beings. Using habits as the basis, the piece explores the root of society\'s polarization and disconnection and calls for renewed focus on connection, empathy and collective action.\n' +
+        '\n' +
+        'Made for Equilibrio Dinamico in 2024\n' +
+        '\n' +
+        'Choreographer: Aishwarya Raut and Antonello Sangirardi \n' +
+        'Dancers: Fernanda Urgese, Giulia Bertoni, Daniela Santoro, Alberto Tafuni, Rocco Vitulli, Lea My,  Davide Storto, Antonello Amati, Claudia Vergari, \n' +
+        'Footage by: Stefano Sasso\n' +
+        'Music: various artists',
     localVideo: '/videos/tutto_fumo.mp4'
   },
   {
