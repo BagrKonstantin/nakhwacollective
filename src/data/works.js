@@ -34,7 +34,7 @@ export const worksData = [
     ],
     reviews: [
       {
-        quote: "‘A distinctive movement vocabulary to make us sit up and want more - much more. Raut should definitely be on your radar.",
+        quote: "‘A distinctive movement vocabulary to make us sit up and want more - much more. Raut should definitely be on your radar.’",
         source: 'LiftedLeg review, Nadī 2024'
       },
       {
@@ -110,7 +110,7 @@ export const worksData = [
         source: 'Emma van Boolen'
       },
       {
-        quote: "Raut, a catherine wheel of ideas, looks one to follow.",
+        quote: "'Raut, a catherine wheel of ideas, looks one to follow.'",
         source: 'Bruce Marriot'
       }
     ],
