@@ -126,32 +126,9 @@
   transform: scale(1.05);
 }
 
-.collab-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: var(--transition);
-  padding: 2rem;
-  text-align: center;
-  backdrop-filter: blur(2px);
-}
-
-.collab-image-wrapper:hover .collab-overlay {
-  opacity: 1;
-}
-
-.collab-quote {
-  font-style: italic;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--accent);
+.collab-image-wrapper:hover .collab-image {
+  filter: grayscale(0%);
+  transform: scale(1.05);
 }
 
 .collab-info h3 {

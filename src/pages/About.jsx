@@ -2,9 +2,9 @@ import React from 'react'
 import './About.css'
 
 const collaborators = [
-  { name: 'Jodi Rabinowitz', role: 'Light, set and video Designer', quote: "she's fucking great", image: '/images/jodi Rabinowitz.jpg' },
-  { name: 'Nordra', role: 'Composer', quote: "fucking cool stuff", image: '/images/Nordra.jpg' },
-  { name: 'Dylan Tedaldi', role: 'Multidisciplinary artist', quote: "Great, but needs to become more political!", image: '/images/Dylan Tedaldi.jpg' }
+  { name: 'Jodi Rabinowitz', role: 'Light, set and video Designer', image: '/collaborators/JodiRabinowitz.jpg' },
+  { name: 'Nordra', role: 'Composer', image: '/collaborators/Nordra.jpg' },
+  { name: 'Dylan Tedaldi', role: 'Multidisciplinary artist', image: '/collaborators/DylanTedaldi.jpg' }
 ];
 
 const About = () => {
@@ -13,7 +13,7 @@ const About = () => {
       <section id="aishwarya" className="snap-child pb-section">
         <div className="bio-section container">
           <div className="bio-image-wrapper">
-            <img src="/images/Aishwarya%20Raut.jpg" alt="Aishwarya Raut" className="bio-image" />
+            <img src="/collaborators/AishwaryaRaut.jpg" alt="Aishwarya Raut" className="bio-image" />
           </div>
           <div className="bio-text">
             <div className="bio-header">
@@ -33,7 +33,7 @@ const About = () => {
       <section id="antonello" className="snap-child pb-section">
         <div className="bio-section reverse container">
           <div className="bio-image-wrapper">
-            <img src="/images/Antonello%20Sangirardi.jpg" alt="Antonello Sangirardi" className="bio-image" />
+            <img src="/collaborators/AntonelloSangirardi.jpg" alt="Antonello Sangirardi" className="bio-image" />
           </div>
           <div className="bio-text">
             <div className="bio-header">
@@ -42,7 +42,7 @@ const About = () => {
             </div>
             <div className="bio-content">
               <p>Antonello Sangirardi is a contemporary dancer, choreographer, and photographer from Bari, Italy. In 2017 he danced with 'Ballet Preljocaj' later joining 'Rambert' from 2018 to 2024. Antonello has toured across UK, Europe, Asia and Australia and performed works by Wim Vandekeybus, Ben Duke, Sidi Larbi Cherkaoui, Imre and Marne Van Opstal, Jill Johnson, Hofesh Shechter, Ohad Naharin, Sharon Eyal, Trisha Brown, Merce Cunningham, Alonzo King, Jo Strømgren, Benoit Swan Pouffer, Ella Rothschild, Angelin Preljocaj, Roberta Ferrara, Brian Ca.</p>
-              <p>He has performed with artists such as FKA Twigs, Laura Mvula, Fabian Incardona, Giò Sada, Soprano and for brands including Swiss, Vogue, Ferrari X Chivas. Antonello's choreography credits include 'All The World's Alive Again' by 'H-Magazine' featured on 'Nowness' as assistant choreographer, 'Tutto Fumo' for company Equilibrio Dinamico 2024, 'Nadi' for Thames Water Festival 2024, 'My shop Your problems' for a self produced event in Rambert, in 2023.</p>
+              <p>He has performed with artists such as FKA Twigs, Laura Mvula, Fabian Incardona, Giò Sada, Soprano and for brands including Swiss, Vogue, Ferrari X Chivas. Antonello's choreography credits include 'All The World's Alive Again' by 'H-Magazine' featured on 'Nowness' as assistant choreographer, 'Tutto Fumo' for company Equilibrio Dinamico 2024, 'Nadi' for Thames Water Festival 2024, 'My shop Your problems' for a self produced event in Rambert, in 2023, 'Leoni da Tastiera-Keyboard Lions' for 'Resolution 26' at the Place, London, in 2026.</p>
               <p>He is currently a freelance artist working across UK, Europe and India.</p>
             </div>
           </div>
@@ -57,9 +57,6 @@ const About = () => {
               <div className="collaborator-card" key={index}>
                 <div className="collab-image-wrapper">
                   <img src={collab.image} alt={collab.name} className="collab-image" />
-                  <div className="collab-overlay">
-                    <p className="collab-quote">"{collab.quote}"</p>
-                  </div>
                 </div>
                 <div className="collab-info">
                   <h3>{collab.name}</h3>

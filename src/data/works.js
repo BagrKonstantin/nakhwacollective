@@ -14,17 +14,18 @@ export const worksData = [
       { label: 'Music', value: 'Various artists' }
     ],
     reviews: [],
-    localVideo: '/videos/tutto_fumo.mp4',
+    localVideo: '/works/tutto_fumo/videos/tutto_fumo_short.mp4',
+    fullVideo: '/works/tutto_fumo/videos/tutto_fumo_low.mp4',
     photos: [
-      '/tutto_fumo/images/tutto_fumo_1.jpg',
-      '/tutto_fumo/images/tutto_fumo_2.jpg',
-      '/tutto_fumo/images/tutto_fumo_3.jpg',
-      '/tutto_fumo/images/tutto_fumo_4.jpg',
-      '/tutto_fumo/images/tutto_fumo_5.jpg',
-      '/tutto_fumo/images/tutto_fumo_6.jpg',
-      '/tutto_fumo/images/tutto_fumo_7.jpg',
-      '/tutto_fumo/images/tutto_fumo_8.jpg',
-      '/tutto_fumo/images/tutto_fumo_9.jpg'
+      '/works/tutto_fumo/images/tutto_fumo_1_low.jpg',
+      '/works/tutto_fumo/images/tutto_fumo_2_low.jpg',
+      '/works/tutto_fumo/images/tutto_fumo_3_low.jpg',
+      '/works/tutto_fumo/images/tutto_fumo_4_low.jpg',
+      '/works/tutto_fumo/images/tutto_fumo_5_low.jpg',
+      '/works/tutto_fumo/images/tutto_fumo_6_low.jpg',
+      '/works/tutto_fumo/images/tutto_fumo_7_low.jpg',
+      '/works/tutto_fumo/images/tutto_fumo_8_low.jpg',
+      '/works/tutto_fumo/images/tutto_fumo_9_low.jpg'
     ]
   },
   {
@@ -52,8 +53,21 @@ export const worksData = [
         source: 'Pulse Magazine, What about the Rain? 2024'
       }
     ],
-    localVideo: '/videos/nadi.mp4',
-    photos: []
+    localVideo: '/works/nadi/videos/nadi_short.mp4',
+    fullVideo: '/works/nadi/videos/nadi_low.mp4',
+    photos: [
+      '/works/nadi/images/nadi_1_low.jpg',
+      '/works/nadi/images/nadi_2_low.jpg',
+      '/works/nadi/images/nadi_3_low.jpg',
+      '/works/nadi/images/nadi_4_low.jpg',
+      '/works/nadi/images/nadi_5_low.jpg',
+      '/works/nadi/images/nadi_6_low.jpg',
+      '/works/nadi/images/nadi_7_low.jpg',
+      '/works/nadi/images/nadi_8_low.jpg',
+      '/works/nadi/images/nadi_9_low.jpg',
+      '/works/nadi/images/nadi_10_low.jpg',
+      '/works/nadi/images/nadi_11_low.jpg'
+    ]
   },
   {
     id: 'tension-funfair',
@@ -70,8 +84,17 @@ export const worksData = [
       { label: 'Footage by', value: 'Antonello Sangirardi' }
     ],
     reviews: [],
-    localVideo: '/videos/tension_funfair.mp4',
-    photos: []
+    localVideo: '/works/tension_funfair/videos/tension_funfair_short.mp4',
+    fullVideo: '/works/tension_funfair/videos/tension_funfair_low.mp4',
+    photos: [
+      '/works/tension_funfair/images/tension_funfair_1_low.jpg',
+      '/works/tension_funfair/images/tension_funfair_2_low.jpg',
+      '/works/tension_funfair/images/tension_funfair_3_low.jpg',
+      '/works/tension_funfair/images/tension_funfair_4_low.jpg',
+      '/works/tension_funfair/images/tension_funfair_5_low.jpg',
+      '/works/tension_funfair/images/tension_funfair_6_low.jpg',
+      '/works/tension_funfair/images/tension_funfair_7_low.jpg'
+    ]
   },
   {
     id: 'my-shop-your-problems',
@@ -97,8 +120,20 @@ export const worksData = [
       { label: 'Footage by', value: 'Aaron Akrong' }
     ],
     reviews: [],
-    youtubeId: 'ARRdNC1AxHc',
-    photos: []
+    localVideo: '/works/my_shop_your_problems/videos/my_shop_your_problems_short.mp4',
+    fullVideo: '/works/my_shop_your_problems/videos/my_shop_your_problems_low.mp4',
+    photos: [
+      '/works/my_shop_your_problems/images/my_shop_your_problems_1_low.jpg',
+      '/works/my_shop_your_problems/images/my_shop_your_problems_2_low.jpg',
+      '/works/my_shop_your_problems/images/my_shop_your_problems_3_low.jpg',
+      '/works/my_shop_your_problems/images/my_shop_your_problems_4_low.jpg',
+      '/works/my_shop_your_problems/images/my_shop_your_problems_5_low.jpg',
+      '/works/my_shop_your_problems/images/my_shop_your_problems_6_low.jpg',
+      '/works/my_shop_your_problems/images/my_shop_your_problems_7_low.jpg',
+      '/works/my_shop_your_problems/images/my_shop_your_problems_8_low.jpg',
+      '/works/my_shop_your_problems/images/my_shop_your_problems_9_low.jpg',
+      '/works/my_shop_your_problems/images/my_shop_your_problems_10_low.jpg'
+    ]
   },
   {
     id: 'what-about-the-rain',
@@ -124,7 +159,8 @@ export const worksData = [
         source: 'Bruce Marriot'
       }
     ],
-    youtubeId: 'Go5jyB1-w0c',
+    localVideo: '/works/what_about_the_rain/videos/what_about_the_rain_short.mp4',
+    fullVideo: '/works/what_about_the_rain/videos/what_about_the_rain_low.mp4',
     photos: []
   },
   {
@@ -144,7 +180,23 @@ export const worksData = [
       { label: 'Music', value: 'Various Artists' }
     ],
     reviews: [],
-    youtubeId: null, // No video provided in prompt for this one, but I'll leave space
-    photos: []
+    localVideo: '/works/leoni_da_tastiera_keyboard_lions/videos/leoni_da_tastiera_keyboard_lions_short.mp4',
+    fullVideo: '/works/leoni_da_tastiera_keyboard_lions/videos/leoni_da_tastiera_keyboard_lions_low.mp4',
+    photos: [
+      '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_1_low.jpg',
+      '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_2_low.jpg',
+      '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_3_low.jpg',
+      '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_4_low.jpg',
+      '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_5_low.jpg',
+      '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_6_low.jpg',
+      '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_7_low.jpg',
+      '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_8_low.jpg',
+      '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_9_low.jpg',
+      '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_10_low.jpg',
+      '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_11_low.jpg',
+      '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_12_low.jpg',
+      '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_13_low.jpg',
+      '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_14_low.jpg'
+    ]
   }
 ];
