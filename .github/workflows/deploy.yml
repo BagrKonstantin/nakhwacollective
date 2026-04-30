@@ -30,7 +30,12 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
+            echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
+            
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/nakhwacollective:latest
+            
             docker stop react-site || true
             docker rm react-site || true
             docker run -d --name react-site --restart always -p 80:80 ${{ secrets.DOCKERHUB_USERNAME }}/nakhwacollective:latest
+            
+            docker logout
