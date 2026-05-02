@@ -16,8 +16,7 @@ const Contacts = () => {
           
           <div className="contact-group">
             <h3>Email</h3>
-            <a href="mailto:aishwarya.raut1@outlook.com">aishwarya.raut1@outlook.com</a>
-            <a href="mailto:antonellosan@outlook.com">antonellosan@outlook.com</a>
+            <a href="mailto:nakhwacollective@outlook.com">nakhwacollective@outlook.com</a>
           </div>
 
           <div className="contact-group">
