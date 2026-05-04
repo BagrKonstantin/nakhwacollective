@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom'
 import Home from './Home'
 import About from './About'
 import Works from './Works'
+import Reviews from './Reviews'
 import Contacts from './Contacts'
 import SideNav from '../components/SideNav'
 
@@ -29,6 +30,7 @@ const LandingPage = () => {
       <Home />
       <About />
       <Works />
+      <Reviews />
       <Contacts />
     </div>
   )

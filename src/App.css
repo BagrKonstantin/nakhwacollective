@@ -38,7 +38,7 @@
     min-height: auto;
     padding: 3rem 0;
   }
-  .home-container, .work-section, .contacts-section {
+  .home-container, .work-section, .contacts-section, .reviews-section {
     min-height: 100vh; /* Keep videos full height */
     padding: 0;
     scroll-snap-align: start;

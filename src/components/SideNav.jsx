@@ -22,6 +22,12 @@ export const groupedSections = [
     items: worksData.map(work => ({ id: `work-${work.id}`, label: work.title }))
   },
   {
+    category: 'Testimonials',
+    items: [
+      { id: 'reviews', label: 'Reviews' }
+    ]
+  },
+  {
     category: 'Contact us',
     items: [
       { id: 'contacts', label: 'Contacts' }
