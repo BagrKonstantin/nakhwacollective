@@ -1,6 +1,11 @@
 import React from 'react'
 import './About.css'
 
+const collaborators = [
+  { name: 'Jodi Rabinowitz', role: 'Light, set and video Designer', image: '/collaborators/JodiRabinowitz.jpg' },
+  { name: 'Nordra', role: 'Composer', image: '/collaborators/Nordra.jpg' },
+  { name: 'Dylan Tedaldi', role: 'Multidisciplinary artist', image: '/collaborators/DylanTedaldi.jpg' }
+];
 
 const About = () => {
   return (
@@ -44,6 +49,24 @@ const About = () => {
         </div>
       </section>
 
+      <section id="collaborators" className="snap-child collaborators-section pb-section">
+        <div className="container" style={{ width: '100%' }}>
+          <h2 className="section-title text-center">COLLABORATORS</h2>
+          <div className="collaborators-grid">
+            {collaborators.map((collab, index) => (
+              <div className="collaborator-card" key={index}>
+                <div className="collab-image-wrapper">
+                  <img src={collab.image} alt={collab.name} className="collab-image" />
+                </div>
+                <div className="collab-info">
+                  <h3>{collab.name}</h3>
+                  <span className="collab-role">{collab.role}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   )
 }
