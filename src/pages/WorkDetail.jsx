@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { worksData } from '../data/works';
+import { collaboratorsData } from '../data/collaborators';
 import { ArrowLeft, Play, Users, MessageSquare, Info, Calendar, Camera, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import './WorkDetail.css';
 
@@ -10,6 +11,25 @@ const WorkDetail = () => {
   const work = worksData.find(w => w.pathId === id);
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+
+  const renderLinkedValue = (value) => {
+    if (!value) return null;
+    const parts = value.split(/(,\s*|\s+and\s+)/);
+    
+    return parts.map((part, index) => {
+      const trimmedPart = part.trim();
+      const collaborator = collaboratorsData.find(c => c.name.toLowerCase() === trimmedPart.toLowerCase());
+      
+      if (collaborator) {
+        return (
+          <Link key={index} to={`/collaborator/${collaborator.slug}`} className="collaborator-link">
+            {part}
+          </Link>
+        );
+      }
+      return <span key={index}>{part}</span>;
+    });
+  };
 
   const handleKeyDown = useCallback((e) => {
     if (selectedImageIndex !== null) {
@@ -124,7 +144,7 @@ const WorkDetail = () => {
             {work.credits.map((credit, idx) => (
               <div key={idx} className="credit-item">
                 <span className="credit-label">{credit.label}</span>
-                <span className="credit-value">{credit.value}</span>
+                <span className="credit-value">{renderLinkedValue(credit.value)}</span>
               </div>
             ))}
           </div>
@@ -136,7 +156,7 @@ const WorkDetail = () => {
                 {work.characters.map((char, idx) => (
                   <div key={idx} className="credit-item">
                     <span className="credit-label">{char.label}</span>
-                    <span className="credit-value">{char.value}</span>
+                    <span className="credit-value">{renderLinkedValue(char.value)}</span>
                   </div>
                 ))}
               </div>

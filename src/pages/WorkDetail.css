@@ -188,6 +188,33 @@
   font-weight: 500;
 }
 
+.collaborator-link {
+  color: #c4b5fd;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.collaborator-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.collaborator-link:hover {
+  color: white;
+}
+
+.collaborator-link:hover::after {
+  width: 100%;
+}
+
 /* Photos Grid */
 .photos-grid {
   display: grid;
