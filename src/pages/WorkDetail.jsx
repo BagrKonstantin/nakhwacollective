@@ -16,19 +16,38 @@ const WorkDetail = () => {
     if (!value) return null;
     const parts = value.split(/(,\s*|\s+and\s+)/);
     
-    return parts.map((part, index) => {
-      const trimmedPart = part.trim();
-      const collaborator = collaboratorsData.find(c => c.name.toLowerCase() === trimmedPart.toLowerCase());
+    const result = [];
+    for (let i = 0; i < parts.length; i += 2) {
+      const namePart = parts[i];
+      const separatorPart = parts[i + 1];
       
-      if (collaborator) {
-        return (
-          <Link key={index} to={`/collaborator/${collaborator.slug}`} className="collaborator-link">
-            {part}
-          </Link>
+      const trimmedName = namePart.trim();
+      const collaborator = collaboratorsData.find(c => c.name.toLowerCase() === trimmedName.toLowerCase());
+      
+      const nameElement = collaborator ? (
+        <Link to={`/collaborator/${collaborator.slug}`} className="collaborator-link">
+          {namePart}
+        </Link>
+      ) : (
+        namePart
+      );
+
+      if (separatorPart) {
+        const hasComma = separatorPart.startsWith(',');
+        const comma = hasComma ? ',' : '';
+        const restOfSeparator = hasComma ? separatorPart.substring(1) : separatorPart;
+        
+        result.push(
+          <span key={i} style={{ whiteSpace: 'nowrap' }}>
+            {nameElement}{comma}
+          </span>
         );
+        result.push(<span key={i + 1}>{restOfSeparator}</span>);
+      } else {
+        result.push(<span key={i}>{nameElement}</span>);
       }
-      return <span key={index}>{part}</span>;
-    });
+    }
+    return result;
   };
 
   const handleKeyDown = useCallback((e) => {
