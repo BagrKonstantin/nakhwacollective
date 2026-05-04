@@ -14,7 +14,6 @@ export const groupedSections = [
     items: [
       { id: 'aishwarya', label: 'Aishwarya Raut' },
       { id: 'antonello', label: 'Antonello Sangirardi' },
-      { id: 'collaborators', label: 'Collaborators' }
     ]
   },
   {
