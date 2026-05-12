@@ -119,9 +119,9 @@ const WorkDetail = () => {
         </div>
         <div className="hero-content container">
           <div className="hero-text">
-            <span className="hero-year">{work.year}</span>
-            <h1 className="hero-title" style={{ fontFamily: work.fontFamily }}>{work.title}</h1>
-            {work.subtitle && <p className="hero-subtitle" style={{ fontFamily: work.fontFamily }}>{work.subtitle}</p>}
+            <span className="hero-year">{work?.year}</span>
+            <h1 className="hero-title" style={{ fontFamily: work?.fontFamily || 'inherit' }}>{work?.title}</h1>
+            {work?.subtitle && <p className="hero-subtitle" style={{ fontFamily: work?.fontFamily || 'inherit' }}>{work.subtitle}</p>}
           </div>
           {work.fullVideo && (
             <button className="watch-full-button" onClick={() => setIsVideoModalOpen(true)}>
@@ -139,7 +139,7 @@ const WorkDetail = () => {
             <Info className="section-icon" />
             <h2>ABOUT THE PROJECT</h2>
           </div>
-          <p className="project-description" style={{ fontFamily: work.fontFamily }}>{work.description}</p>
+          <p className="project-description" style={{ fontFamily: work?.fontFamily || 'inherit' }}>{work?.description}</p>
         </section>
 
         {/* Premier Info */}
