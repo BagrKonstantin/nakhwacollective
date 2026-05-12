@@ -26,8 +26,7 @@ export const worksData = [
       '/works/tutto_fumo/images/tutto_fumo_7_low.jpg',
       '/works/tutto_fumo/images/tutto_fumo_8_low.jpg',
       '/works/tutto_fumo/images/tutto_fumo_9_low.jpg'
-    ],
-    fontFamily: "'Bebas Neue', sans-serif"
+    ]
   },
   {
     id: 'nadi',
@@ -68,8 +67,7 @@ export const worksData = [
       '/works/nadi/images/nadi_9_low.jpg',
       '/works/nadi/images/nadi_10_low.jpg',
       '/works/nadi/images/nadi_11_low.jpg'
-    ],
-    fontFamily: "'Cormorant Garamond', serif"
+    ]
   },
   {
     id: 'tension-funfair',
@@ -96,8 +94,7 @@ export const worksData = [
       '/works/tension_funfair/images/tension_funfair_5_low.jpg',
       '/works/tension_funfair/images/tension_funfair_6_low.jpg',
       '/works/tension_funfair/images/tension_funfair_7_low.jpg'
-    ],
-    fontFamily: "'Syne', sans-serif"
+    ]
   },
   {
     id: 'my-shop-your-problems',
@@ -136,8 +133,7 @@ export const worksData = [
       '/works/my_shop_your_problems/images/my_shop_your_problems_8_low.jpg',
       '/works/my_shop_your_problems/images/my_shop_your_problems_9_low.jpg',
       '/works/my_shop_your_problems/images/my_shop_your_problems_10_low.jpg'
-    ],
-    fontFamily: "'Karla', sans-serif"
+    ]
   },
   {
     id: 'what-about-the-rain',
@@ -165,8 +161,7 @@ export const worksData = [
     ],
     localVideo: '/works/what_about_the_rain/videos/what_about_the_rain_short.mp4',
     fullVideo: '/works/what_about_the_rain/videos/what_about_the_rain_low.mp4',
-    photos: [],
-    fontFamily: "'Playfair Display', serif"
+    photos: []
   },
   {
     id: 'leoni-da-tastiera',
@@ -202,7 +197,6 @@ export const worksData = [
       '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_12_low.jpg',
       '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_13_low.jpg',
       '/works/leoni_da_tastiera_keyboard_lions/images/leoni_da_tastiera_keyboard_lions_14_low.jpg'
-    ],
-    fontFamily: "'Space Mono', monospace"
+    ]
   }
 ];
