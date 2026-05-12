@@ -6,8 +6,8 @@ import './Works.css'
 const Works = () => {
   return (
     <>
-      {worksData.map((work) => (
-        <section id={`work-${work?.id}`} key={work?.id || Math.random()} className="work-section snap-child">
+      {worksData.map((work, index) => (
+        <section id={`work-${work?.id}`} key={work?.id || index} className="work-section snap-child">
           <div className="work-bg">
             {work.localVideo ? (
               <video
