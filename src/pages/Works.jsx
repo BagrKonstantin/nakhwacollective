@@ -27,8 +27,8 @@ const Works = () => {
 
           <div className="work-content container">
             <span className="work-year">{work.year}</span>
-            <h2 className="work-title">{work.title}</h2>
-            <p className="work-description">{work.subtitle || work.description}</p>
+            <h2 className="work-title" style={{ fontFamily: work.fontFamily }}>{work.title}</h2>
+            <p className="work-description" style={{ fontFamily: work.fontFamily }}>{work.subtitle || work.description}</p>
             <Link to={`/work/${work.pathId}`} className="discover-btn">
               DISCOVER PROJECT
             </Link>
