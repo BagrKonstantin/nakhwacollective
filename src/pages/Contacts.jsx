@@ -26,7 +26,7 @@ const Contacts = () => {
 
           <div className="contact-group">
             <h3>Instagram</h3>
-            <a href="https://instagram.com/aishwarya_raut" target="_blank" rel="noreferrer">@aishwarya_raut</a>
+            <a href="https://instagram.com/aishwarya__raut" target="_blank" rel="noreferrer">@aishwarya_raut</a>
             <a href="https://instagram.com/antonello_san" target="_blank" rel="noreferrer">@antonello_san</a>
           </div>
         </div>
