@@ -81,7 +81,7 @@ export const worksData = [
     premiere: "Premiered in London for Rambert, during 'River Stage', not yet performed in theatres.",
     credits: [
       { label: 'Choreographer', value: 'Aishwarya Raut' },
-      { label: 'Dancers', value: 'Adele Balint, Seren Williams, Naya Bingie, Hannah Hernandez, Dylan Tedaldi, Conor Kerrigan' },
+      { label: 'Dancers', value: 'Adele Balint, Seren Williams, Naya Lovell, Hannah Hernandez, Dylan Tedaldi, Conor Kerrigan' },
       { label: 'Composer', value: 'Dylan Tedaldi' },
       { label: 'Footage by', value: 'Antonello Sangirardi' }
     ],
