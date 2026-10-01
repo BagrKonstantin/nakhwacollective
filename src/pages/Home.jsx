@@ -63,7 +63,7 @@ const Home = () => {
       <div className="home-content">
         <h1 className="hero-title">NAKHWA</h1>
         <p className="hero-subtitle">Movement based creative duo</p>
-        <p className="hero-description">Founded by Aishwarya Raut and Antonello Sangirardi, collaborating with artists from around the world to create across and through Theatres, site specific, Workshops and film</p>
+        <p className="hero-description">Founded by Aishwarya Raut and Antonello Sangirardi, collaborating with artists from around the world to create across and through theatres, site specific, workshops and film</p>
         <div className="home-nav-buttons">
           <button onClick={() => scrollTo('aishwarya')} className="home-nav-btn">About Us</button>
           <button onClick={() => scrollTo('work-tutto-fumo')} className="home-nav-btn">Our Works</button>
