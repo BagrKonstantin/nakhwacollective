@@ -10,8 +10,7 @@ const Contacts = () => {
         <div className="contacts-grid">
           <div className="contact-group">
             <h3>Locations</h3>
-            <p>London, Bari</p>
-            <p>Mumbai, Göteborg</p>
+            <p>London, Bari, Mumbai</p>
           </div>
           
           <div className="contact-group">
